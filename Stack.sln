@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stack", "Stack\Stack.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StackDinArray", "StackDinArray\StackDinArray.vcxproj", "{96F03729-4233-4594-BE09-289491CBA392}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StackVector", "StackVector\StackVector.vcxproj", "{978985AC-1BD6-43A1-BB75-21154B501DE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{96F03729-4233-4594-BE09-289491CBA392}.Release|x64.Build.0 = Release|x64
 		{96F03729-4233-4594-BE09-289491CBA392}.Release|x86.ActiveCfg = Release|Win32
 		{96F03729-4233-4594-BE09-289491CBA392}.Release|x86.Build.0 = Release|Win32
+		{978985AC-1BD6-43A1-BB75-21154B501DE6}.Debug|x64.ActiveCfg = Debug|x64
+		{978985AC-1BD6-43A1-BB75-21154B501DE6}.Debug|x64.Build.0 = Debug|x64
+		{978985AC-1BD6-43A1-BB75-21154B501DE6}.Debug|x86.ActiveCfg = Debug|Win32
+		{978985AC-1BD6-43A1-BB75-21154B501DE6}.Debug|x86.Build.0 = Debug|Win32
+		{978985AC-1BD6-43A1-BB75-21154B501DE6}.Release|x64.ActiveCfg = Release|x64
+		{978985AC-1BD6-43A1-BB75-21154B501DE6}.Release|x64.Build.0 = Release|x64
+		{978985AC-1BD6-43A1-BB75-21154B501DE6}.Release|x86.ActiveCfg = Release|Win32
+		{978985AC-1BD6-43A1-BB75-21154B501DE6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
