@@ -4,43 +4,43 @@ class StackV
 {
 private:
 	vector<T> m_data;
+	
 	T maxElement = 0;
 public:
-	StackV();
+	vector<T> m_max;
+	StackV()
+	{
+		
+	};
 	~StackV()
 	{
-		maxElement = 0;
+		//maxElement = 0;
 	};
 
-	bool push()
+	bool Add(const T &value)
 	{		
-		T value = GenerateInt();
+		//value = GenerateInt();
+		
 		m_data.push_back(value);
-		cout << "Add element: " << value << endl;
+		//cout << "Add element: " << value << endl;
 		CheckMAX(value);
 		return true;
 	}
 	
-	bool pop()
+	bool Take(T &value)
 	{
 		auto res = m_data.size() > 0;
 		if(res)
 		{
-			if(CheckMAX(m_data.end()))
-			{
-				//if the last element is max???
-				return false;
-			}
-			
-			m_data.erase(m_data.end());
+			m_data.erase(m_data.end() - 1);
+			value = *m_max.rbegin();			
+			cout << "Max: " << value << endl;
+			m_max.erase(m_max.end() - 1);
 			return true;
 		}
 		return false;
 	}
 
-
-
-private:
 	int GenerateInt()
 	{
 		random_device rand;
@@ -48,6 +48,11 @@ private:
 		uniform_int_distribution<int> uniform_int_distribution(0, 100);
 		return uniform_int_distribution(engine);
 	}
+
+
+
+private:
+	
 
 	bool CheckMAX(const T value)
 	{
@@ -61,10 +66,12 @@ private:
 			if (maxElement <= value)
 			{
 				maxElement = value;
-				cout << "maxElement: " << maxElement;
+				//cout << "maxElement: " << maxElement<<endl;
+				m_max.push_back(maxElement);
 				return true;
 			}
-			cout << "maxElement: " << maxElement;
+			//cout << "maxElement: " << maxElement<<endl;
+			m_max.push_back(maxElement);
 			return false;
 		}
 	}

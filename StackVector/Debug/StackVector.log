@@ -3,5 +3,4 @@
   Compiling...
   StackVector.cpp
   Generating Code...
-StackVector.obj : error LNK2019: unresolved external symbol "public: __thiscall StackV<int>::StackV<int>(void)" (??0?$StackV@H@@QAE@XZ) referenced in function _main
-F:\С++\ITStep\Stack\Debug\StackVector.exe : fatal error LNK1120: 1 unresolved externals
+  StackVector.vcxproj -> F:\С++\ITStep\Stack\Debug\StackVector.exe
